@@ -153,3 +153,18 @@ END
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-03-18 15:08:33.650
 !MESSAGE Started org.springframework.tooling.boot.ls LS process 26192
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 15:26:27.207
+!MESSAGE Classpath changed for project: 01-Array-List
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-18 16:26:37.773
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

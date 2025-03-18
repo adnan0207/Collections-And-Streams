@@ -1,0 +1,106 @@
+package com.adnan.corejava;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+
+		list.add(1);
+		list.add(5);
+		list.add(23);
+
+		System.out.println(list.get(2));
+
+		System.out.println(list.size());
+
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+
+		for (int i : list) {
+			System.out.println(i);
+		}
+
+		System.out.println(list.contains(5));
+		System.out.println(list.contains(9));
+
+		list.remove(2);
+
+		for (int i : list) {
+			System.out.println(i);
+		}
+
+		System.out.println(list.size());
+
+		list.add(23);
+
+		list.add(2, 50);
+
+		System.out.println(list);
+
+		List<String> listTwo = new ArrayList<String>();
+
+		List<String> listThree = Arrays.asList("Sunday", "Monday", "Tuesday"); // here we cannot add or remove as it
+																				// returns a fixed sized List
+//		listThree.add("Saturday");		// this will give exception we cannot add here
+		System.out.println(listThree);
+		listThree.set(0, "Saturday"); // we can easily set but not add
+		System.out.println(listThree);
+		
+		// if we want to make this listThree modifiable then
+		
+		ArrayList<String> listFour = new ArrayList<String>(listThree);
+		listFour.add("Wednesday");
+		
+		System.out.println(listFour);
+
+		System.out.println(list.getClass().getName());
+		System.out.println(listTwo.getClass().getName());
+		System.out.println(listThree.getClass().getName());
+
+		List<Integer> li = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9);			// Returns an unmodifiable list containing n elements
+		// we cannot even set here
+		
+		List<Integer> li1 = new ArrayList<Integer>();
+		
+		li1.add(1);
+		li1.add(2);
+		li1.add(4);
+		li1.add(5);
+		
+		System.out.println(li1);
+		
+		li1.add(2, 3);
+		
+		System.out.println(li1);
+		
+		List<Integer> li2 = List.of(6,7,8,9);
+		
+		li1.addAll(li2);
+		
+		System.out.println(li1);
+		
+		List<String> fruits = new ArrayList<String>();
+		
+		fruits.add("Apple");
+		fruits.add("Mango");
+		fruits.add("Banana");
+		fruits.add("Cherry");
+		fruits.add("Kiwi");
+		
+		System.out.println(fruits);
+		
+		fruits.remove(2);
+		
+		System.out.println(fruits);
+		
+		fruits.remove("Apple")
+
+	}
+
+}
