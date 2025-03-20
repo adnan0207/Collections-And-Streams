@@ -46,9 +46,11 @@
 			<item value="com.adnan"/>
 		</list>
 		<list key="name">
+			<item value="Comparator"/>
 			<item value="ArrayList"/>
 		</list>
 		<list key="artifactId">
+			<item value="02-Comparator"/>
 			<item value="01-Array-List"/>
 		</list>
 		<list key="projectNameTemplate">
