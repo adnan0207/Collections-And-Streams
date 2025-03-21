@@ -46,10 +46,12 @@
 			<item value="com.adnan"/>
 		</list>
 		<list key="name">
+			<item value="Linked List"/>
 			<item value="Comparator"/>
 			<item value="ArrayList"/>
 		</list>
 		<list key="artifactId">
+			<item value="03-LinkedList"/>
 			<item value="02-Comparator"/>
 			<item value="01-Array-List"/>
 		</list>
