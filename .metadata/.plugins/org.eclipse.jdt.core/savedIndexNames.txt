@@ -2,6 +2,5 @@ INDEX VERSION 1.134+E:\VisiLean\Collections-Framework-and-Streams\.metadata\.plu
 1008751973.index
 3413270776.index
 1865797976.index
-1820206967.index
 4081150790.index
 2783125268.index
